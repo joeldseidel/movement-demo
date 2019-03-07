@@ -1,0 +1,12 @@
+C:\Users\Joel\Documents\GitHub\movement-demo\movement-demo\bin\Debug\movement-demo.exe.config
+C:\Users\Joel\Documents\GitHub\movement-demo\movement-demo\bin\Debug\movement-demo.exe
+C:\Users\Joel\Documents\GitHub\movement-demo\movement-demo\bin\Debug\movement-demo.pdb
+C:\Users\Joel\Documents\GitHub\movement-demo\movement-demo\bin\Debug\movement-demo.xml
+C:\Users\Joel\Documents\GitHub\movement-demo\movement-demo\obj\Debug\movement-demo.vbprojResolveAssemblyReference.cache
+C:\Users\Joel\Documents\GitHub\movement-demo\movement-demo\obj\Debug\movement_demo.frmDemo.resources
+C:\Users\Joel\Documents\GitHub\movement-demo\movement-demo\obj\Debug\movement_demo.Resources.resources
+C:\Users\Joel\Documents\GitHub\movement-demo\movement-demo\obj\Debug\movement-demo.vbproj.GenerateResource.Cache
+C:\Users\Joel\Documents\GitHub\movement-demo\movement-demo\obj\Debug\movement-demo.vbproj.CoreCompileInputs.cache
+C:\Users\Joel\Documents\GitHub\movement-demo\movement-demo\obj\Debug\movement-demo.exe
+C:\Users\Joel\Documents\GitHub\movement-demo\movement-demo\obj\Debug\movement-demo.xml
+C:\Users\Joel\Documents\GitHub\movement-demo\movement-demo\obj\Debug\movement-demo.pdb
