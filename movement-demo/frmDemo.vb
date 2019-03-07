@@ -55,10 +55,43 @@ Public Class frmDemo
         picCharacter.Location = characterPosition
     End Sub
     Private Sub detectCollision()
+        'Define the the additional character properties
         Dim characterRight As Integer = picCharacter.Left + picCharacter.Size.Width
+        Dim characterBottom As Integer = picCharacter.Top + picCharacter.Size.Height
         For Each barrier As PictureBox In barriers
-            Dim barrierRight = barrier.Left + barrier.Size.Width
+            'Define the additional barrier properties
+            Dim barrierRight As Integer = barrier.Left + barrier.Size.Width
+            Dim barrierBottom As Integer = barrier.Top + barrier.Size.Height
+            If characterRight >= barrier.Left And picCharacter.Left <= barrierRight Then
+                'The character is beyond this barrier but still within
+                If barrier.Top = 0 Then
+                    'This is a top barrier
+                    If picCharacter.Top <= barrierBottom Then
+                        'The character is currently inside of the barrier's bounds
+                        handleCollision("barrier")
+                    End If
+                Else
+                    'This is a bottom barrier
+                    If characterBottom >= barrier.Top Then
+                        'The character is currently inside of the barrier's bounds
+                        handleCollision("barrier")
+                    End If
+                End If
+            End If
         Next
+        'Check the top and bottom
+        If picCharacter.Top <= 0 Then
+            handleCollision("top")
+        ElseIf characterBottom >= Me.Height Then
+            handleCollision("bottom")
+        End If
+    End Sub
+    Private Sub handleCollision(collisionName As String)
+        tmrMain.Enabled = False
+        MsgBox("Failure. You hit the " & collisionName)
+        Dim newInstance As New frmDemo
+        newInstance.Show()
+        Me.Close()
     End Sub
     Private Sub frmDemo_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         If e.KeyCode = Keys.Space Then
